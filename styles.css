@@ -6,6 +6,7 @@
   --desaturated_blue: hsl(224, 23%, 55%);
   --dark_blue: hsl(223, 47%, 23%);
   --ff-primary: "Red Hat Display", sans-serif;
+  --transition-animation: 0.5s ease-in;
 }
 body {
   font-size: 16px;
@@ -21,10 +22,9 @@ body {
 }
 .order-card {
   display: grid;
-
   margin: auto;
   place-items: center;
-  background: white;
+  background: var(--very_pale_blue);
   border-radius: 10px;
   width: 400px;
   box-shadow: 10px 14px 30px -5px rgba(108, 116, 140, 0.46);
@@ -51,6 +51,7 @@ body {
   background-color: hsla(225, 100%, 94%, 0.5);
   border-radius: 10px;
   column-gap: 1em;
+  width: 100%;
 }
 .left {
   display: grid;
@@ -69,13 +70,47 @@ body {
 .link-btn {
   place-self: center;
   font-weight: 700;
+  transition: var(--transition-animation);
 }
-.card-btns{
+.link-btn:hover {
+  color: var(--desaturated_blue);
+}
+.card-btns {
   display: grid;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  width: 100%;
+  padding: 2em;
   row-gap: 1em;
 }
-.proceed-btn{
+
+.proceed-btn {
   width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--bright_blue);
+  color: var(--very_pale_blue);
+  padding: 1em;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  transition: var(--transition-animation);
+}
+.proceed-btn:hover {
+  background-color: hsla(245, 75%, 52%, 0.5);
+}
+.cancel-btn {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--desaturated_blue);
+  padding: 1em;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  transition: var(--transition-animation);
+}
+.cancel-btn:hover {
+  color: var(--dark_blue);
 }
