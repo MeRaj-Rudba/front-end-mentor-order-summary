@@ -28,6 +28,7 @@ body {
   border-radius: 10px;
   width: 400px;
   box-shadow: 10px 14px 30px -5px rgba(108, 116, 140, 0.46);
+  margin-bottom: 2em;
 }
 .card-title {
   color: var(--dark_blue);
@@ -71,7 +72,10 @@ body {
 .link-btn {
   place-self: center;
   font-weight: 700;
+  color: var(--bright_blue);
+  text-decoration: none;
   transition: var(--transition-animation);
+  font-size: 14px;
 }
 .link-btn:hover {
   color: var(--desaturated_blue);
@@ -90,7 +94,7 @@ body {
   background-color: var(--bright_blue);
   color: var(--very_pale_blue);
   padding: 1em;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   cursor: pointer;
   text-align: center;
@@ -106,7 +110,7 @@ body {
   background-color: transparent;
   color: var(--desaturated_blue);
   padding: 1em;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   cursor: pointer;
   text-align: center;
@@ -128,4 +132,8 @@ body {
     place-items: center;
     height: 100vh;
   }
+}
+.attribution{
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
